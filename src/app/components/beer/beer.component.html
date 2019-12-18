@@ -1,8 +1,9 @@
 <section class="beer" [ngStyle]="{background: data.colorBackground}">
   <div class="left">
     <!-- <div class="inner"> -->
-      <div class="placeholder" [ngStyle]="{background: data.colorPlaceholder}">
-        <img src="/assets/images/galactique.svg" alt="">
+      <div class="placeholder">
+      <!-- <div class="placeholder" [ngStyle]="{background: data.colorPlaceholder}"> -->
+        <img src="/assets/images/citron.svg" alt="">
         <!-- <img [src]="data.image" alt=""> -->
       </div>
     <!-- </div> -->
@@ -11,7 +12,13 @@
     <div class="inner">
       <h3 class="title-3" [ngStyle]="{color: data.colorSubtitle}">{{data.subtitle}}</h3>
       <h2 class="title-2" [ngStyle]="{color: data.colorTitle}">{{data.title}}</h2>
-      <p class="description">{{data.description}}</p>
+      <div class="infos">
+        <ul class="inner" [ngStyle]="{color: data.colorSubtitle}">
+          <li>Alcool : {{data.alcool}}°</li>
+          <li>Amertume : {{data.amertume}} IBU</li>
+        </ul>
+      </div>
+      <p class="description" [ngStyle]="{color: data.colorSubtitle}">{{data.description}}</p>
     </div>
   </div>
 </section>
