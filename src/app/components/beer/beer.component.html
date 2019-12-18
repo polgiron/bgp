@@ -1,0 +1,17 @@
+<section class="beer" [ngStyle]="{background: data.colorBackground}">
+  <div class="left">
+    <!-- <div class="inner"> -->
+      <div class="placeholder" [ngStyle]="{background: data.colorPlaceholder}">
+        <img src="/assets/images/galactique.svg" alt="">
+        <!-- <img [src]="data.image" alt=""> -->
+      </div>
+    <!-- </div> -->
+  </div>
+  <div class="right">
+    <div class="inner">
+      <h3 class="title-3" [ngStyle]="{color: data.colorSubtitle}">{{data.subtitle}}</h3>
+      <h2 class="title-2" [ngStyle]="{color: data.colorTitle}">{{data.title}}</h2>
+      <p class="description">{{data.description}}</p>
+    </div>
+  </div>
+</section>

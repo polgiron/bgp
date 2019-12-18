@@ -1,0 +1,16 @@
+@import url('//fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: 'Kenyan Coffee';
+  src: url('~src/assets/fonts/kenyan-coffee-rg.ttf');
+}
+
+// @font-face {
+//   font-family: 'Kenyan Coffee Italic';
+//   src: url('~src/assets/fonts/kenyan-coffee-rg-it.ttf');
+// }
+
+@import '~src/assets/scss/variables';
+@import '~src/assets/scss/base';
+@import '~src/assets/scss/breakpoints';
+@import '~src/assets/scss/typo';
